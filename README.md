@@ -28,4 +28,19 @@ function:
       return 0;
   }
   /*************** scanf or sscnaf 的返回值 = 提取参数个数  ***********************/
-  3、
+  3、sprintf(buffer,"想要规定的格式",传参);将数据转化为字符串
+  EG:
+  #include <stdio.h>
+
+int main() {
+    char buffer[50];
+    int year = 2023;
+    float pi = 3.14159;
+
+    // 将数据格式化到 buffer
+    int len = sprintf(buffer, "Year: %d, Pi: %.2f", year, pi);
+    
+    printf("%s\n", buffer);  // 输出：Year: 2023, Pi: 3.14
+    printf("写入字符数：%d\n", len);  // 输出：21（不包括 \0）
+    return 0;
+}
