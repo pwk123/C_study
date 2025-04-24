@@ -7,7 +7,7 @@ function:
   
 2、sscanf(str,"str想要提取出来的参数",name,&num1,&num2);
   EG:
-  
+  `
   #include <stdio.h>
   int main() {
       const char* str = "Name: Alice, Age: 25, Height: 165.5";
@@ -29,7 +29,7 @@ function:
       return 0;
   }
   /*************** scanf or sscnaf 的返回值 = 提取参数个数  ***********************/
-  
+  `
   3、sprintf(buffer,"想要规定的格式",传参);将数据转化为字符串
   EG:esc
   #include <stdio.h>
